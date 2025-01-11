@@ -14,7 +14,7 @@ def build_url(word: str) -> str:
 def fetch_page(url: str, timeout=10) -> str:
     """指定 URL から HTML を取得する."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; FuriganaInfoBot/1.0; +https://github.com/yourname/furigana_info)"
+        "User-Agent": "Mozilla/5.0 (compatible; FuriganaInfoBot/1.0; +https://github.com/asfrgrtgd/furigana-info)"
     }
     resp = requests.get(url, headers=headers, timeout=timeout)
     resp.raise_for_status()
